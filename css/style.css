@@ -22,6 +22,14 @@ body {
     align-items: flex-start;
 }
 
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
 
 .border {
     border: 1px solid black;
@@ -240,7 +248,7 @@ ul .fa-check {
 
 .partners {
     gap: 25px;
-    margin-bottom: 100px;
+    margin: 100px 0;
 }
 
 .text-partner {
@@ -257,9 +265,7 @@ ul .fa-check {
     flex-basis: calc(100% / 3 - 60px / 3);
 }
 
-.business-operations {
-    margin-bottom: 100px;
-}
+.business-operations {}
 
 /*costumers*/
 
@@ -270,46 +276,112 @@ ul .fa-check {
 
 /*footer*/
 
-
-.db-paper {
-    width: 100vw;
+.costumers {
+    max-width: 100vw;
 }
 
-.sponsor {
+.costumers div {
+    width: 33%;
+}
+
+.university,
+.corporation {
     flex-wrap: wrap;
+    align-items: center;
+
 
 }
 
-.sponsor * {
-    padding: 40px;
-}
-
-
-.db-paper * {
+.university div,
+.corporation div {
     flex-basis: calc(100% / 2);
-    filter: invert(1);
-
+    height: 314px;
 
 }
 
+
+.university img,
+.corporation img {
+
+    width: 50%;
+    filter: invert(1);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+
+}
+
+.text-global {
+    flex-grow: 1;
+    padding: 50px;
+}
 
 .designit {
     background-color: #A2D39B;
-
-
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.arizona {
+.asu {
     background-color: #61082B;
-
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.florida {
+.uf {
     background-color: #0093CE;
-
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .topps {
     background-color: #FF1C1C;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.wbr {
+    background-color: #D5001F;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hearst {
+    background-color: #B4D0E7;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lonely {
+    background-color: #0D2481;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.c-channel {
+    background-color: #FFD830;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-global {
+    min-height: 628px;
+    background-color: #F5F5F5;
+}
+
+.text-global img {
+    width: 50%;
+}
+
+.text-global .b-border {
+    margin: 50px 0;
 }
