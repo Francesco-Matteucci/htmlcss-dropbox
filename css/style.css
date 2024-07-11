@@ -413,3 +413,23 @@ ul .fa-check {
     font-size: 18px;
     padding: 10px 30px;
 }
+
+/*faq*/
+.faq-row {
+    margin-top: 150px;
+}
+
+.faq-row * {
+    justify-content: space-between;
+    line-height: 5;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.faq-row div {
+    border-bottom: 1px solid #D0D0D3;
+}
+
+.first-question {
+    border-top: 1px solid #D0D0D3;
+}
