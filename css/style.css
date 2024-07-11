@@ -62,6 +62,7 @@ img {
 }
 
 .button {
+    min-width: 200px;
     color: #1F1F1F;
     font-size: 16px;
     padding: 10px 15px;
@@ -72,7 +73,11 @@ img {
 .blue-button {
     color: #fff;
     background-color: #0061FF;
-    min-width: 200px;
+}
+
+.white-button {
+    background-color: #fff;
+    border: 1px solid black;
 }
 
 .gray {
@@ -232,8 +237,12 @@ ul .fa-check {
 
 /*partner section*/
 
+.partners {
+    gap: 25px;
+}
+
 .text-partner {
-    flex-basis: 35%;
+    flex-basis: 70%;
 }
 
 .img-partner {
