@@ -385,3 +385,31 @@ ul .fa-check {
 .text-global .b-border {
     margin: 50px 0;
 }
+
+/*free-trial footer*/
+
+.free-trial {
+    background-color: #B4D0E7;
+}
+
+.m-container {
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.text-ft {
+    padding: 100px 0;
+}
+
+.text-ft h2 {
+    flex-basis: 500px;
+    color: #61082B;
+    font-weight: bold;
+}
+
+
+.text-ft button {
+    border: 0;
+    font-size: 18px;
+    padding: 10px 30px;
+}
