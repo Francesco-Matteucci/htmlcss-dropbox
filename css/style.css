@@ -93,7 +93,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 600;
     margin-bottom: 60px;
 }
@@ -193,7 +193,8 @@ ul .fa-check {
     margin-bottom: 60px;
 }
 
-.billing-col {
+.billing-col,
+.row-operations {
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -239,6 +240,7 @@ ul .fa-check {
 
 .partners {
     gap: 25px;
+    margin-bottom: 100px;
 }
 
 .text-partner {
@@ -248,5 +250,22 @@ ul .fa-check {
 .img-partner {
     flex-grow: 1;
 }
+
+/*operations section*/
+
+.col-operations {
+    flex-basis: calc(100% / 3 - 60px / 3);
+}
+
+.business-operations {
+    margin-bottom: 100px;
+}
+
+/*costumers*/
+
+.db-costumers h2 {
+    max-width: 70%;
+}
+
 
 /*footer*/
