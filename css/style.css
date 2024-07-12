@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin-top: 80px;
 }
 
 /*utils*/
@@ -70,15 +71,15 @@ img {
 }
 
 .button {
-    min-width: 200px;
+
     color: #1F1F1F;
     font-size: 16px;
-    padding: 10px 15px;
+    padding: 10px 10px;
     margin: 40px 0;
     border: 0;
 }
 
-.blue-button {
+.blue-button.button {
     color: #fff;
     background-color: #0061FF;
 }
@@ -88,11 +89,16 @@ img {
     border: 1px solid black;
 }
 
+.big-btn {
+    width: 200px;
+}
+
 .gray {
     color: #1F1F1F;
 }
 
 /*generics*/
+
 
 h1 {
     font-size: 5em;
@@ -150,11 +156,12 @@ ul .fa-check {
     height: 80px;
     justify-content: space-between;
     padding: 0 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1;
+    box-shadow: 1px 1px 10px #000;
 }
 
 .header-navbar a {
@@ -424,19 +431,34 @@ ul .fa-check {
     margin-top: 150px;
 }
 
-.faq-row * {
+.faq-row span {
     justify-content: space-between;
     line-height: 5;
     margin-right: 20px;
     font-weight: bold;
 }
 
-.faq-row div {
+.faq-row p {
+    text-align: justify;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.faq-row li {
     border-bottom: 1px solid #D0D0D3;
 }
 
 .first-question {
     border-top: 1px solid #D0D0D3;
+}
+
+#detail {
+    display: none;
+}
+
+#summary:hover+#detail,
+#detail:hover {
+    display: block;
 }
 
 /*links footer*/
