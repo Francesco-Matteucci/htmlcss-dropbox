@@ -73,11 +73,40 @@ img {
 .button {
 
     color: #1F1F1F;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 10px;
     margin: 40px 0;
     border: 0;
 }
+
+.btn-move {
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #081753;
+}
+
+.button:hover::before,
+.button:hover::after {
+    opacity: 1;
+}
+
+.fa-chevron-right {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.btn-move:hover .fa-chevron-right {
+    transform: translate(3px, -50%);
+}
+
 
 .blue-button.button {
     color: #fff;
