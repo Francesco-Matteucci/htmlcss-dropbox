@@ -551,3 +551,12 @@ ul .fa-check {
     margin-right: 5px;
 
 }
+
+.link-bold li {
+    transition: font-weight 0.2s ease;
+    cursor: pointer;
+}
+
+.link-bold li:hover {
+    font-weight: bold;
+}
