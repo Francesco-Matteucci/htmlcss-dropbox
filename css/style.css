@@ -511,11 +511,11 @@ ul .fa-check {
     border-top: 1px solid #D0D0D3;
 }
 
-#detail {
+.detail {
     display: none;
 }
 
-#summary:hover+#detail,
+.summary:hover+#detail,
 #detail:hover {
     display: block;
 }
