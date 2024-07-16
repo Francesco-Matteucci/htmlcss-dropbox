@@ -1,0 +1,51 @@
+:root {
+    --space-xxs: 2px;
+    --space-xs: 5px;
+    --space-sm: 10px;
+    --space-md: 15px;
+    --space-lg: 20px;
+    --space-xl: 30px;
+    --space-xxl: 40px;
+    --space-xxxl: 60px;
+    --space-extra: 100px;
+    --space-extral: 150px;
+    --space-extraxl: 200px;
+    /*Containers*/
+    --s-container-w: 600px;
+    --m-container: 150px auto;
+    --m-container-w: 900px;
+    --l-s-container: 0 auto;
+    --l-container-w: 1200px;
+    /*margings&paddings*/
+    --top-bottom: 50px 0;
+    --plan-space: 20px 30px;
+    --user-space: 10px 0;
+    --nav-space: 0 30px;
+    --h-nav-space: 0 20px;
+    --btn-mar: 40px 0;
+    --btn-pad: 10px 10px;
+    /*bg colors*/
+    --designit-color: #A2D39B;
+    --asu-color: #61082B;
+    --uf-color: #0093CE;
+    --topps-color: #FF1C1C;
+    --wbr-color: #D5001F;
+    --hearst-color: #B4D0E7;
+    --lonely-color: #0D2481;
+    --c-channel-color: #FFD830;
+    --text-global-color: #F5F5F5;
+    --free-trial: #B4D0E7;
+    /*buttons*/
+    --blue-btn-color: #0061FF;
+    --white-btn-color: #fff;
+    /*effects*/
+    --border-opacity: 20px solid rgba(255, 255, 255, 0.2);
+    --box-shadow-btn: 0 0 20px #081753;
+    --box-shadow-nav: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+    --box-shadow-header: 1px 1px 10px #000;
+    --hidden-border: 20px solid transparent;
+    /*specs*/
+    --text-pad: 100px 0;
+    --text-ft-btn: 10px 30px;
+
+}

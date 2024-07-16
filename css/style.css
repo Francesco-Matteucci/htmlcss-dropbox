@@ -44,7 +44,7 @@ body {
 .b-border-col {
     border-bottom: 1px solid #D0D0D3;
     width: 90px;
-    margin: 40px 0;
+    margin: var(--btn-mar);
 }
 
 img {
@@ -53,26 +53,26 @@ img {
 }
 
 .s-container {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: var(--s-container-w);
+    margin: var(--l-s-container);
 }
 
 .m-container {
-    max-width: 900px;
-    margin: 150px auto;
+    max-width: var(--m-container-w);
+    margin: var(--m-container);
 }
 
 .l-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: var(--l-container-w);
+    margin: var(--l-s-container);
 }
 
 .button {
 
     color: #1F1F1F;
     font-size: 14px;
-    padding: 10px 10px;
-    margin: 40px 0;
+    padding: var(--btn-pad);
+    margin: var(--btn-mar);
     border: 0;
 }
 
@@ -84,7 +84,7 @@ img {
 
 .button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px #081753;
+    box-shadow: var(--box-shadow-btn);
 }
 
 .button:hover::before,
@@ -95,7 +95,7 @@ img {
 .fa-chevron-right {
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: var(--space-sm);
     transform: translateY(-50%);
     transition: transform 0.3s ease;
 }
@@ -107,7 +107,7 @@ img {
 
 .blue-button.button {
     color: #fff;
-    background-color: #0061FF;
+    background-color: var(--blue-btn-color);
 }
 
 li .blue-button {
@@ -115,12 +115,12 @@ li .blue-button {
 }
 
 .white-button {
-    background-color: #fff;
+    background-color: var(--white-btn-color);
     border: 1px solid black;
 }
 
 .big-btn {
-    width: 200px;
+    width: var(--space-extraxl);
 }
 
 .gray {
@@ -139,17 +139,17 @@ h1 {
 h2 {
     font-size: 2.5em;
     font-weight: 600;
-    margin-bottom: 60px;
+    margin-bottom: var(--space-xxxl);
 }
 
 h3 {
     font-size: 1.3em;
-    margin-bottom: 20px;
+    margin-bottom: var(--space-lg);
 }
 
 h4 {
     font-size: 1.1em;
-    margin-bottom: 10px;
+    margin-bottom: var(--space-sm);
 }
 
 .billing-title div {
@@ -158,8 +158,8 @@ h4 {
 }
 
 .ico {
-    height: 20px;
-    width: 20px;
+    height: var(--space-lg);
+    width: var(--space-lg);
     border: 1px solid #000;
     border-radius: 50%;
     margin-right: 4px;
@@ -184,7 +184,7 @@ ul .fa-check {
 }
 
 .fa-ul li {
-    padding-bottom: 10px;
+    padding-bottom: var(--space-sm);
 }
 
 .fa-ul span {
@@ -199,13 +199,13 @@ ul .fa-check {
     background-color: #fff;
     height: 80px;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: var(--h-nav-space);
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1;
-    box-shadow: 1px 1px 10px #000;
+    box-shadow: var(--box-shadow-header);
 }
 
 .header-navbar a {
@@ -214,13 +214,13 @@ ul .fa-check {
     text-decoration: none;
     height: 80px;
     line-height: 80px;
-    padding: 0 30px;
+    padding: var(--nav-space);
 }
 
 .nav-faq ul li a:hover,
 .nav-buttons ul li a:hover {
 
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: var(--box-shadow-nav);
     font-weight: bold;
     transition: 0.1s ease;
 }
@@ -229,7 +229,7 @@ ul .fa-check {
 
 .bg-header {
     background-color: #B4D0E7;
-    margin-bottom: 100px;
+    margin-bottom: var(--space-extra);
     height: 785px;
 }
 
@@ -250,7 +250,7 @@ ul .fa-check {
 .arrow {
     position: absolute;
     left: 0;
-    bottom: 100px;
+    bottom: var(--space-extra);
 }
 
 
@@ -274,17 +274,17 @@ ul .fa-check {
 /*business section*/
 
 .monthly {
-    margin-right: 40px;
+    margin-right: var(--space-xxl);
 }
 
 .billing-title {
-    margin-bottom: 60px;
+    margin-bottom: var(--space-xxxl);
 }
 
 .billing-col,
 .row-operations {
     flex-wrap: wrap;
-    gap: 30px;
+    gap: var(--space-xl);
 }
 
 .billing-col * {
@@ -297,18 +297,18 @@ ul .fa-check {
 
 .user-ico {
     text-align: center;
-    padding: 10px 0;
+    padding: var(--user-space);
 }
 
 .plan-tb {
 
-    padding: 20px 30px;
+    padding: var(--plan-space);
     font-size: 16px;
     min-height: 850px;
 }
 
 .plan-tb h3 {
-    margin-top: 20px;
+    margin-top: var(--space-lg);
 }
 
 .top-plan .plan-tb {
@@ -321,7 +321,7 @@ ul .fa-check {
 }
 
 .last-enterprice-team {
-    margin-top: 60px;
+    margin-top: var(--space-xxxl);
     font-size: 14px;
 }
 
@@ -353,7 +353,7 @@ ul .fa-check {
 
 /*costumers*/
 .db-costumers {
-    margin-top: 200px;
+    margin-top: var(--space-extraxl);
 }
 
 .db-costumers h2 {
@@ -366,7 +366,7 @@ ul .fa-check {
 
 .costumers {
     max-width: 100vw;
-    margin-top: 150px;
+    margin-top: var(--space-extral);
 }
 
 .costumers div {
@@ -383,7 +383,7 @@ ul .fa-check {
 .corporation div {
     flex-basis: calc(100% / 2);
     height: 314px;
-    border: 20px solid transparent;
+    border: var(--hidden-border);
 }
 
 .university img,
@@ -403,40 +403,41 @@ ul .fa-check {
 }
 
 .designit {
-    background-color: #A2D39B;
+    background-color: var(--designit-color);
 }
 
 .asu {
-    background-color: #61082B;
+    background-color: var(--asu-color);
 }
 
 .uf {
-    background-color: #0093CE;
+    background-color: var(--uf-color);
 }
 
 .topps {
-    background-color: #FF1C1C;
+    background-color: var(--topps-color);
 }
 
 .wbr {
-    background-color: #D5001F;
+    background-color: var(--wbr-color);
 }
 
 .hearst {
-    background-color: #B4D0E7;
+    background-color: var(--hearst-color);
 }
 
 .lonely {
-    background-color: #0D2481;
+    background-color: var(--lonely-color);
 }
 
 .c-channel {
-    background-color: #FFD830;
+    background-color: var(--c-channel-color);
 }
+
 
 .text-global {
     min-height: 628px;
-    background-color: #F5F5F5;
+    background-color: var(--text-global-color);
 }
 
 .text-global img {
@@ -444,18 +445,18 @@ ul .fa-check {
 }
 
 .text-global .b-border {
-    margin: 50px 0;
+    margin: var(--top-bottom);
 }
 
 .university div:hover,
 .corporation div:hover {
-    border: 20px solid rgba(255, 255, 255, 0.2);
+    border: var(--border-opacity);
 }
 
 /*free-trial footer*/
 
 .free-trial-footer {
-    background-color: #B4D0E7;
+    background-color: var(--free-trial);
 }
 
 .m-container {
@@ -464,7 +465,7 @@ ul .fa-check {
 }
 
 .text-ft {
-    padding: 100px 0;
+    padding: var(--text-pad);
 }
 
 .text-ft h2 {
@@ -477,27 +478,27 @@ ul .fa-check {
 .text-ft button {
     border: 0;
     font-size: 18px;
-    padding: 10px 30px;
-    margin-top: 15px;
+    padding: var(--text-ft-btn);
+    margin-top: var(--space-md);
 }
 
 /*faq*/
 
 .faq-row {
-    margin-top: 150px;
+    margin-top: var(--space-extral);
 }
 
 .faq-row span {
     justify-content: space-between;
     line-height: 5;
-    margin-right: 20px;
+    margin-right: var(--space-lg);
     font-weight: bold;
 }
 
 .faq-row p {
     text-align: justify;
     font-size: small;
-    margin-bottom: 20px;
+    margin-bottom: var(--space-lg);
 }
 
 .faq-row li {
@@ -524,7 +525,7 @@ ul .fa-check {
 /*links footer*/
 
 .links {
-    margin-top: 200px;
+    margin-top: var(--space-extraxl);
     padding: 80px 0;
     color: #fff;
     background-color: #000;
@@ -541,15 +542,15 @@ ul .fa-check {
 }
 
 .dropbox .b-border {
-    margin-top: 100px;
+    margin-top: var(--space-extra);
 }
 
 .language {
-    margin-top: 40px;
+    margin-top: var(--space-xxl);
 }
 
 .fa-earth-americas {
-    margin-right: 5px;
+    margin-right: var(--space-xs);
 
 }
 
